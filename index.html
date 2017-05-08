@@ -1,0 +1,36 @@
+﻿
+<center>
+<span id="clickme"><img src="images/001.jpg" /></span>
+<h1>score:
+<div id="affichage">score</div></h1>
+</center>
+<script>
+score = 0;
+//ecran = getElementById('affichage');
+	//ecran.innerHTML = "score"+score;
+
+    var element = document.getElementById('clickme');
+	
+
+    element.addEventListener('click', function() {      score = score + 1;
+														
+														//alert("Vous m'avez cliqué !"+score);
+														
+														document.getElementById('affichage').innerHTML = score;
+													});
+
+//mm chose
+
+/*var element = document.getElementById('clickme');
+
+var myFunction = function() {
+								alert("Vous m'avez cliqué 2!");
+							};
+
+element.addEventListener('click', myFunction);
+*/
+
+
+
+
+</script>
